@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>如何搭建hugo博客，并在GitHub上部署(windows版) // My New Hugo Site</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://yylike-new.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="如何搭建hugo博客，并在GitHub上部署(windows版)"/>
+<meta name="twitter:description" content=" 前言：hugo是一款基于go语言的博客框架，使用之前需要安装git
+1.下载hugo   下载地址:https://github.com/gohugoio/hugo/releases
+  选择版本，我这里下载的是64位的压缩包
+  本地创建包hugo，hugo下创建bin和sites文件夹，将压缩包解压到hugo\bin中
+  添加全局环境变量，将hugo\bin目录地址放到Path中
+  测试，git bash中执行hugo version
+   2.搭建博客(所有命令都在git bash中)   新建博客
+进入sites文件夹
+hugo new site myblog
+myblog是自定义名称
+  设置主题
+可以去官网下载模板:https://themes.gohugo.io/
+ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
+这里以m10c模板为例，此时位置是在myblog下
+启动博客
+hugo server -t m10c buildDrafts
+启动成功会出现一个访问地址:http://localhost:1313
+此时在浏览器中访问到博客，说明启动成功
+  创建文章
+hugo new post/blog.md
+此时会在myblog\content\post目录下创建一个blog.md文件
+可以使用vim编辑，也可以使用vscode等工具，打开blog.md便可以创作自己的文章了，嘻嘻
+   "/>
+
+    <meta property="og:title" content="如何搭建hugo博客，并在GitHub上部署(windows版)" />
+<meta property="og:description" content=" 前言：hugo是一款基于go语言的博客框架，使用之前需要安装git
+1.下载hugo   下载地址:https://github.com/gohugoio/hugo/releases
+  选择版本，我这里下载的是64位的压缩包
+  本地创建包hugo，hugo下创建bin和sites文件夹，将压缩包解压到hugo\bin中
+  添加全局环境变量，将hugo\bin目录地址放到Path中
+  测试，git bash中执行hugo version
+   2.搭建博客(所有命令都在git bash中)   新建博客
+进入sites文件夹
+hugo new site myblog
+myblog是自定义名称
+  设置主题
+可以去官网下载模板:https://themes.gohugo.io/
+ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
+这里以m10c模板为例，此时位置是在myblog下
+启动博客
+hugo server -t m10c buildDrafts
+启动成功会出现一个访问地址:http://localhost:1313
+此时在浏览器中访问到博客，说明启动成功
+  创建文章
+hugo new post/blog.md
+此时会在myblog\content\post目录下创建一个blog.md文件
+可以使用vim编辑，也可以使用vscode等工具，打开blog.md便可以创作自己的文章了，嘻嘻
+   " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yylike-new.github.io/post/blog/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-05-07T21:08:08&#43;08:00" />
+<meta property="article:modified_time" content="2021-05-07T21:08:08&#43;08:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://yylike-new.github.io"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">如何搭建hugo博客，并在GitHub上部署(windows版)</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          May 7, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <hr>
+<p>前言：hugo是一款基于go语言的博客框架，使用之前需要安装git</p>
+<h1 id="1下载hugo">1.下载hugo</h1>
+<ul>
+<li>
+<p>下载地址:<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></p>
+</li>
+<li>
+<p>选择版本，我这里下载的是64位的压缩包</p>
+</li>
+<li>
+<p>本地创建包hugo，hugo下创建bin和sites文件夹，将压缩包解压到hugo\bin中</p>
+</li>
+<li>
+<p>添加全局环境变量，将hugo\bin目录地址放到Path中</p>
+</li>
+<li>
+<p>测试，git bash中执行hugo version</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<hr>
+<h1 id="2搭建博客所有命令都在git-bash中">2.搭建博客(所有命令都在git bash中)</h1>
+<ul>
+<li>
+<p>新建博客</p>
+<p>进入sites文件夹</p>
+<p><code>hugo new site myblog</code></p>
+<p>myblog是自定义名称</p>
+</li>
+<li>
+<p>设置主题</p>
+<p>可以去官网下载模板:<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
+<p><code> git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c</code></p>
+<p>这里以m10c模板为例，此时位置是在myblog下</p>
+<p>启动博客</p>
+<p><code>hugo server -t m10c buildDrafts</code></p>
+<p>启动成功会出现一个访问地址:http://localhost:1313</p>
+<p>此时在浏览器中访问到博客，说明启动成功</p>
+</li>
+<li>
+<p>创建文章</p>
+<p><code>hugo new post/blog.md</code></p>
+<p>此时会在myblog\content\post目录下创建一个blog.md文件</p>
+<p>可以使用vim编辑，也可以使用vscode等工具，打开blog.md便可以创作自己的文章了，嘻嘻</p>
+</li>
+</ul>
+<hr>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
