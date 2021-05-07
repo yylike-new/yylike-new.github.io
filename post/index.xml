@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>https://yylike-new.github.io/post/</link>
+    <link>http://example.org/post/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 May 2021 21:08:08 +0800</lastBuildDate><atom:link href="https://yylike-new.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 May 2021 21:08:08 +0800</lastBuildDate><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何搭建hugo博客，并在GitHub上部署(windows版)</title>
-      <link>https://yylike-new.github.io/post/blog/</link>
+      <link>http://example.org/post/blog/</link>
       <pubDate>Fri, 07 May 2021 21:08:08 +0800</pubDate>
       
-      <guid>https://yylike-new.github.io/post/blog/</guid>
-      <description> 前言：hugo是一款基于go语言的博客框架，使用之前需要安装git
+      <guid>http://example.org/post/blog/</guid>
+      <description>前言：hugo是一款基于go语言的博客框架，使用之前需要安装git
 1.下载hugo   下载地址:https://github.com/gohugoio/hugo/releases
   选择版本，我这里下载的是64位的压缩包
   本地创建包hugo，hugo下创建bin和sites文件夹，将压缩包解压到hugo\bin中
@@ -21,21 +21,18 @@
   测试，git bash中执行hugo version
    2.搭建博客(所有命令都在git bash中)   新建博客
 进入sites文件夹
-hugo new site myblog
-myblog是自定义名称
+hugo new site myblog myblog是自定义名称
   设置主题
 可以去官网下载模板:https://themes.gohugo.io/
- git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
-这里以m10c模板为例，此时位置是在myblog下
+git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c 这里以m10c模板为例，此时位置是在myblog下
 启动博客
-hugo server -t m10c buildDrafts
-启动成功会出现一个访问地址:http://localhost:1313
+hugo server -t m10c buildDrafts 启动成功会出现一个访问地址:http://localhost:1313
 此时在浏览器中访问到博客，说明启动成功
   创建文章
-hugo new post/blog.md
-此时会在myblog\content\post目录下创建一个blog.md文件
+hugo new post/blog.md 此时会在myblog\content\post目录下创建一个blog.md文件
 可以使用vim编辑，也可以使用vscode等工具，打开blog.md便可以创作自己的文章了，嘻嘻
-   </description>
+   远程部署(github)   github中创建仓库，username.github.io(仓库名必须是这个，username是你的github用户名)
+hugo --theme=m10c --baseUrl=&amp;#34;https://username.github.io&amp;#34; 如果成功会生成一个public文件夹</description>
     </item>
     
   </channel>
